@@ -1,0 +1,20 @@
+    
+
+def main():
+        border = "-" * 52
+        print(border)
+        print("-----------Marvellous Directory Automation----------")
+        print(border)
+
+        if (len(sys.argv) != 3):
+            print("Invalid Number of Arguments")
+            print("Please specify the name of Directory")
+            return
+        
+        
+        DirectoryName = sys.argv[1]
+        Extension = sys.argv[2]
+
+        DirectoryScanner(DirectoryName , Extension)
+if __name__ == "__main__":
+    main()
